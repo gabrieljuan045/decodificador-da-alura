@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" type="imagex/png" href="./assets/icon.jpg">
+  <link rel="stylesheet" href="./styles/styles.css" />
+  <title>Decodificador de texto</title>
+</head>
+
+<body>
+  <header>
+  </header>
+  <main>
+    <div class="imagem">
+      <img src="./assets/Vector.png" alt="Logo da alura">
+    </div>
+    <div class="container">
+      <div class="container_text">
+        <div class="texto_codificar">
+          <textarea name="codificador" id="area_texto" placeholder="Digite seu texto" oninput="ajustarTamanho()"></textarea>
+          <div class="bottom">
+            <div class="alert">
+              <img src="./assets/Vectorexclamation.png" alt="exclamation">
+              <div>Apenas letras minúsculas e sem acento.</div>
+            </div>
+            <div class="buttons">
+              <button onclick="criptografar()" class="codificar">Criptografar</button>
+              <button onclick="descriptografar()" class="descodificar">Descriptografar</button>
+            </div>
+        </div>
+        </div>
+      </div>
+      <div class="card_history">
+        <div id="card_history_placeholder">
+          <div class="card_image">
+            <img src="./assets/High quality products 1 1.png" alt="imagem ilustrativa para histórico" />
+          </div>
+          <div class="card_text">
+            <p class="card_title">Nenhuma mensagem encontrada</p>
+            <p class="card_instructions">Digite um texto que você deseja criptografar ou descriptografar.</p>
+          </div>
+        </div>
+          <div id="card_history_text">
+          </div>
+        <button onclick="copiar()" id="copiar">Copiar</button>
+        
+      </div>
+    </div>
+  </main>
+  <script src="app.js" defer></script>
+</body>
+
+</html>

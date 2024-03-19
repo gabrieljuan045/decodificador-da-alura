@@ -1,0 +1,241 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+* {
+  padding: 0;
+  border: 0;
+  margin: 0;
+  text-decoration: none;
+}
+:root {
+  --cor-primaria: #0a3871;
+  --cor-secundaria: #d8dfe8;
+}
+body {
+  background-color: #f3f5fc;
+}
+.imagem{
+  padding-left: 40px;
+  padding-top: 40px;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 85vh;
+  width: 100%;
+}
+.container_text {
+  width: 55vw;
+  height: 100%;
+  padding-left: 13%;
+  display: flex;
+  flex-direction: column;
+}
+.texto_codificar {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+  padding-top: 65px;
+  height: 100%;
+}
+#area_texto {
+  border: 1px solid transparent;
+  border-radius: 4px;
+  padding: 10px;
+  width: 90%;
+  resize: none;
+  font-family: "Inter", sans-serif;
+  font-size: 25px;
+  color: var(--cor-primaria);
+  background-color: transparent;
+}
+#area_texto:focus {
+  outline: none;
+  border-color: transparent;
+}
+#area_texto::placeholder {
+  color: var(--cor-primaria);
+}
+.bottom{
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+.alert{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: "Inter", sans-serif;
+  color: #CED4DA;
+}
+.buttons {
+  width: 55vh;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 20px;
+}
+.codificar {
+  width: 360px;
+  height: 60px;
+  border-radius: 24px;
+  border: none;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: white;
+  background-color: var(--cor-primaria);
+}
+.descodificar {
+  width: 360px;
+  height: 60px;
+  border-radius: 20px;
+  border: 1px solid var(--cor-primaria);
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--cor-primaria);
+  background-color: var(--cor-secundaria);
+}
+.codificar:hover{
+  color: var(--cor-primaria);
+  background-color: var(--cor-secundaria);
+  cursor: pointer;
+}
+.descodificar:hover {
+  color: var(--cor-secundaria);
+  background-color: var(--cor-primaria);
+  cursor: pointer;
+}
+.card_history {
+  background-color: white;
+  margin-right: 40px;
+  height: 100%;
+  width: 20vw;
+  border-radius: 32px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Inter", sans-serif;
+  box-shadow: 5px 12px 35px rgb(221, 221, 221);
+}
+#card_history_placeholder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 300px;
+}
+.card_image img {
+  max-width: 250px;
+  height: auto;
+}
+.card_text {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.card_title {
+  text-align: center;
+  font-weight: 700;
+  color: #343a40;
+  font-size: 24px;
+}
+.card_instructions {
+  text-align: center;
+  color: #ced4da;
+  font-size: 16px;
+}
+#card_history_text {
+  display: none;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 32px;
+  height: 85%;
+  width: 80%;
+  word-break: break-word;
+}
+#copiar {
+  width: 15vw;
+  height: 6%;
+  border-radius: 20px;
+  border: none;
+  margin: 32px;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  background-color: white;
+  border: 1px solid var(--cor-primaria);
+  color: var(--cor-primaria);
+  display: none;
+}
+#copiar:hover {
+  color: var(--cor-primaria);
+  background-color: var(--cor-secundaria);
+  cursor: pointer;
+}
+
+@media (max-width: 1024px){
+  .container_text{
+    width: 50vw;
+  }
+  .card_history {
+    width: 30vw;
+  }
+}
+@media (max-width: 768px){
+  .imagem {
+    padding-top: 70px;
+  }
+  .container {
+    padding-top: 0;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+  }
+  .container_text{
+    padding: 0;
+    width: 90vw;
+    align-items: center;
+  }
+  .card_image{
+    display: none;
+  }
+  .card_history {
+    padding: 32px;
+    margin-right: 0;
+    margin: 40px;
+    height: auto;
+    width: 90vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .texto_codificar{
+    align-items: center;
+    width: 100%;
+    height: 500px;
+  }
+  .bottom{
+    align-items: flex-start;
+    width: 100%;
+  }
+  .buttons{
+    width: 100%;
+  }
+
+  #copiar{
+    height: 100px;
+    width: 85vw;
+  }
+}
+@media (max-width: 425px){
+  .buttons{
+    flex-direction: column;
+  }
+  .card_history{
+    width: 75%;
+  }
+}
