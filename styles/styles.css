@@ -176,6 +176,17 @@ body {
   background-color: var(--cor-secundaria);
   cursor: pointer;
 }
+.creditos{
+  margin-top: 35px;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  color: var(--cor-primaria);
+  background-color: var(--cor-secundaria);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 8vh;
+}
 
 @media (max-width: 1024px){
   .container_text{
@@ -230,6 +241,9 @@ body {
     height: 100px;
     width: 85vw;
   }
+.creditos{
+  margin-top: 0;
+}
 }
 @media (max-width: 425px){
   .buttons{
@@ -237,5 +251,8 @@ body {
   }
   .card_history{
     width: 75%;
+  }
+  .creditos{
+    margin-top: 0;
   }
 }
