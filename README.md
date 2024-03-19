@@ -1,2 +1,3 @@
 # decodificador-da-alura
- Projeto Decodificador da Alura
+ Projeto que cria uma criptografia e descriptografa frases.
+ #AluraChallenge
